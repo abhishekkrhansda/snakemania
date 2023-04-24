@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url(../pics/background1.jpg);
+    height: 540px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    flex-direction:column;
+}
+
+#board{
+    background: linear-gradient(green,yellow);
+    border: 5px solid black;
+    height: 400px;
+    width: 690px;
+    margin-right: 250px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);;
+    grid-template-rows: repeat(18,1fr);
+
+}
+
+.head{
+    background: fixed url(../pics/head.jpg);
+    background-size: 50px;
+    border-radius: 50%;
+}
+
+.snake{
+     background: linear-gradient(pink,red,yellow);
+     border: 1px solid black;
+     border-radius: 10%;
+     transform-style: flat;
+}
+
+
+.food{
+    background: fixed url(../pics/meat.png);
+    background-size: 50px;
+    border-radius: 30%;
+
+}
+
+
+#highscorebox{
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: larger;
+}
+
+#scorebox{
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: larger;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size:60px;
+}
